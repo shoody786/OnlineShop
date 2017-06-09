@@ -59,6 +59,15 @@
                             <ul class="nav navbar-nav navbar-right">
                                 <li><a runat="server" href="~/Account/Register">Register</a></li>
                                 <li><a runat="server" href="~/Account/Login">Log in</a></li>
+
+
+                                <div id="LoginSystem">
+                                    <asp:Label ID="UID" runat="server" Text=""></asp:Label>
+                                    <asp:Label ID="AType" runat="server" Text=""></asp:Label>
+                                </div>
+
+
+
                             </ul>
                         </AnonymousTemplate>
                         <LoggedInTemplate>

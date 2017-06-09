@@ -69,7 +69,17 @@ namespace OnlineShop
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            // Accessing its value
+            var cookieValue = Request.Cookies["LoginCookie"].Value;
+            var cookieValue2 = Request.Cookies["LoginCookie2"].Value;
 
+            // Some label
+            var label = UID;
+            var label2 = AType;
+
+            // Setting the label text
+            label.Text = cookieValue;
+            label2.Text = cookieValue2;
         }
 
         protected void Unnamed_LoggingOut(object sender, LoginCancelEventArgs e)
